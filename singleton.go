@@ -13,7 +13,7 @@ var single_instance *single
 
 func instance_getter() *single {
 	if single_instance==nil	{
-		lock.Lock()  //Here the lock variable is used in orde to prevent more than two thrads simultaneously entering
+		lock.Lock()  //Here the lock variable is used in orde to prevent more than two threads simultaneously entering
 		defer lock.Unlock() //defer is used so that it is unlocked after everything in the scope has been executed
 		if single_instance==nil {
 			fmt.Println("Creating the instance now now")

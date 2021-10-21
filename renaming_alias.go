@@ -2,11 +2,11 @@
 package main
 
 import "fmt"
-import ff "fmt"
+import alias "fmt"
 
 func main(){
 	fmt.Println("This is printed using fmt")
-	ff.Println("This is printed using the alias of fmt")
+	alias.Println("This is printed using the alias of fmt")
 	
 	
 }

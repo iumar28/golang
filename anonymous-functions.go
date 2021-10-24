@@ -10,7 +10,7 @@ func main() {
 
 	func() { // Anonymous function
 
-		fmt.Println("Welcome! to GeeksforGeeks")
+		fmt.Println("This is the use of anonymous functions")
 	}()
 
 }
